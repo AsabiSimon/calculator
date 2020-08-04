@@ -1,0 +1,97 @@
+import java.util.Scanner;
+
+
+public class MyClass {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("1. Addition");
+		System.out.println("2. Subtraction");
+		System.out.println("2. Multiplication");
+		System.out.println("4. Division");
+		
+		
+		System.out.println("Enter your option");
+		
+		Scanner Scanner = new Scanner(System.in);
+		int opt = Scanner.nextInt();
+		
+		
+		double c;
+		
+		if(opt == 1) {
+			
+			System.out.println("Enter first number");
+			int a = Scanner.nextInt();
+
+			
+			System.out.println("Enter second number");
+			int b = Scanner.nextInt();
+			
+			c = a + b;
+			
+			System.out.println("The result is " + c);
+
+			
+		}
+		
+		else if(opt == 2) {
+			
+			System.out.println("Enter first number");
+			int a = Scanner.nextInt();
+
+			
+			System.out.println("Enter second number");
+			int b = Scanner.nextInt();
+			
+			c = a - b;
+			
+			System.out.println("The result is " + c);
+
+			
+		}
+        
+		else if(opt == 3) {
+			
+			System.out.println("Enter first number");
+			int a = Scanner.nextInt();
+
+			
+			System.out.println("Enter second number");
+			int b = Scanner.nextInt();
+			
+			c = a * b;
+			
+			System.out.println("The result is " + c);
+
+			
+		}
+		
+
+		else if(opt == 4) {
+			
+			System.out.println("Enter first number");
+			int a = Scanner.nextInt();
+
+			
+			System.out.println("Enter second number");
+			int b = Scanner.nextInt();
+			
+			c = a / b;
+			
+			System.out.println("The result is " + c);
+
+			
+		}
+		
+		else {
+			
+			System.out.println("You have entered a wrong input");
+
+			
+		}
+
+
+	}
+
+}

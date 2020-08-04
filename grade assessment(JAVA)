@@ -1,0 +1,122 @@
+import java.util.Scanner;
+
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		
+		System.out.println("                                                  Grading System ");
+		System.out.println("                                                    .......... ");
+		
+		Scanner Scan = new Scanner(System.in);
+		
+		System.out.println("Enter Student's name");
+		String name = Scan.nextLine();
+		
+		System.out.println("Enter Student's Department");
+		String dept = Scan.nextLine();
+	
+		
+		System.out.println("Enter Student's index number");
+		int index = Scan.nextInt();
+		
+	
+		System.out.println("Enter Student's Quiz mark ");
+		int a = Scan.nextInt();
+		
+		if (a>10){
+			System.out.println("Error");
+			
+			System.out.println("Enter Student's Quiz mark ");
+			
+			a = Scan.nextInt();
+
+
+		}
+		
+		
+		System.out.println("Enter Student's Midsem mark ");
+		int b = Scan.nextInt();
+		
+		if (b>20){
+			System.out.println("Error");
+			
+			System.out.println("Enter Student's Midsem mark ");
+			
+			b=Scan.nextInt();
+		}
+		
+		
+		System.out.println("Enter Student's Exams Score ");
+		int c = Scan.nextInt();
+		
+		if (c>70){
+			System.out.println("Error");
+			
+			System.out.println("Enter Student's Exams mark ");
+			
+			c = Scan.nextInt();
+
+		}
+		
+		
+		int d = a + b + c;
+		
+		if (d < 40 ) {
+			
+			System.out.println(name + " index no " + index + " department " + dept + " Scored " + d + " and had an F");
+
+			
+		}
+		
+		else if (d<50) {
+			
+			System.out.println(name + " index no " + index + " department " + dept + " Scored " + d + " and had an E");
+
+			
+		}
+		
+		else if (d<60) {
+			
+			System.out.println(name + " index no " + index + " department " + dept + " Scored " + d + " and had an D");
+
+			
+		}
+		
+		else if (d<70) {
+			
+			System.out.println(name + " index no " + index + " department " + dept + " Scored " + d + " and had an C");
+
+			
+		}
+		
+		else if (d<80) {
+			
+			System.out.println(name + " index no " + index + " department " + dept + " Scored " + d + " and had an B");
+
+			
+		}
+		
+		else if (d<=100) {
+			
+			System.out.println(name + " index no " + index + " department " + dept + " Scored " + d + " and had an A");
+
+			
+		}
+	
+	
+	
+	
+
+
+		
+		
+
+
+
+
+
+
+	}
+
+}
